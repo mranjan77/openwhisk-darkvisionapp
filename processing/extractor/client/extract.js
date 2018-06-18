@@ -43,7 +43,7 @@ function getFps(durationInSeconds) {
 
   // for a more complete analysis,
   // use this code that will extract up to 100 images
-  
+  console.log('calculating no of frames...');
   if (durationInSeconds <= 10) {
     return '2/1'; // 2 images per seconds
   } else if (durationInSeconds > 10 && durationInSeconds <= 100) {
