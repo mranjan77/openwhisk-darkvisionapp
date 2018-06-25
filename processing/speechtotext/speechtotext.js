@@ -231,8 +231,8 @@ function submitSpeechToTextRequest(
   if (audio.language_model) {
     apiUrl += `&model=${audio.language_model}`;
   }
-   sttUsername= "df1c4f93-cdc2-4e92-ba56-ae549ef98d73"
-   sttPassword= "kQLPGZfO0uxf"
+   //sttUsername= "df1c4f93-cdc2-4e92-ba56-ae549ef98d73"
+   //sttPassword= "kQLPGZfO0uxf"
   console.log('Submitting', apiUrl);
   fs.createReadStream(fileName).pipe(request({
     method: 'POST',
