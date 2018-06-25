@@ -226,7 +226,7 @@ function submitSpeechToTextRequest(
   apiUrl += `callback_url=${sttCallbackUrl}&user_token=${audio._id}`;
   apiUrl += '&timestamps=true&word_alternatives_threshold=0.9&continuous=true&smart_formatting=true';
   apiUrl += '&events=recognitions.started,recognitions.completed_with_results,recognitions.failed';
-  apiUrl += '&acoustic_customization_id=6baa1239-c2eb-4138-8767-15d837a2f08c&customization_id=c15308ac-0b0c-438a-9648-608880f20d30';
+ // apiUrl += '&acoustic_customization_id=6baa1239-c2eb-4138-8767-15d837a2f08c&customization_id=c15308ac-0b0c-438a-9648-608880f20d30';
   apiUrl += '&results_ttl=5'; // delete results from Watson STT after 5min
   if (audio.language_model) {
     apiUrl += `&model=${audio.language_model}`;
